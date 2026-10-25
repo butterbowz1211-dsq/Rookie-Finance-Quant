@@ -1,0 +1,7 @@
+# Preserve exact evidence and source bytes, including the recorded SHA-256 values.
+* -text
+*.docx binary
+*.pt binary
+*.npz binary
+*.pkl binary
+*.png binary

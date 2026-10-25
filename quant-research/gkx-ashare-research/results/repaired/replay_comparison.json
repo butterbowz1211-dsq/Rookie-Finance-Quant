@@ -1,0 +1,16 @@
+{
+  "schema": "gkx-build-replay/1",
+  "initial_features_sha256": "0a993bef6247fff10db46ace0798bccd1898a55562a99a6e49d881eba8ec0e06",
+  "frozen_features_sha256": "0a993bef6247fff10db46ace0798bccd1898a55562a99a6e49d881eba8ec0e06",
+  "byte_identical": true,
+  "frozen_sources_unchanged": true,
+  "frozen_source_sha256": {
+    "build_features.py": "3d4c29ca90e729c6888f9b68e16d2ff35fb51b83180954c1ea3b6cd05310699b",
+    "data_contract.py": "da87dcf9d85fd140a9d66b76ef88e1695d25ae5e6de8150ad21f2e91be27255a",
+    "build_returns.py": "73e53e7efb90ac914952bd8b7f749ad68562d7de6b4ae890f2141fafee42ab6b"
+  },
+  "frozen_returncode": 0,
+  "source_returns_sha256": "5ab7de8af482336aa0887af2c63d9647398f2bac6b7e18a791c7a3231c5f5ba9",
+  "rows": 639255,
+  "note": "Byte equality binds the model input to the frozen full rebuild; it does not certify vendor data quality."
+}

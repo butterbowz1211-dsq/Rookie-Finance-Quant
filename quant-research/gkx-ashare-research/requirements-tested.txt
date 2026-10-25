@@ -1,0 +1,8 @@
+# Model-training and combined-test versions observed on 2026-10-25.
+# Python 3.12.14; a fresh installation of this exact combination is not asserted.
+# The data rebuild used requirements-tested-data.txt; manifests distinguish both.
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+# Figure export only; not used by training or regression tests.
+matplotlib==3.11.2

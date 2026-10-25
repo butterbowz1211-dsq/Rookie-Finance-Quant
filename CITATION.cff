@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the individual research project and its exact version when using these materials."
+title: "Rookie Finance Quant: Quantitative Research Archive"
+type: software
+authors:
+  - family-names: "Jia"
+    given-names: "Gilmour"
+repository-code: "https://github.com/butterbowz1211-dsq/Rookie-Finance-Quant"

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the specific commit and distinguish historical from repaired experimental results."
+title: "GKX Framework Replication and A-share Return Prediction: Methods, Historical Results and Audit"
+type: software
+authors:
+  - family-names: "Jia"
+    given-names: "Gilmour"
+repository-code: "https://github.com/butterbowz1211-dsq/Rookie-Finance-Quant"
+url: "https://github.com/butterbowz1211-dsq/Rookie-Finance-Quant/tree/main/quant-research/gkx-ashare-research"
+keywords:
+  - empirical asset pricing
+  - machine learning
+  - A-share
+  - replication

@@ -1,0 +1,41 @@
+test_beta_matches_exact_linear_model (test_data_contract.DataTimingTests.test_beta_matches_exact_linear_model) ... ok
+test_daily_features_remove_ex_dividend_price_jump (test_data_contract.DataTimingTests.test_daily_features_remove_ex_dividend_price_jump) ... ok
+test_duplicate_labels_fail (test_data_contract.DataTimingTests.test_duplicate_labels_fail) ... ok
+test_eligibility_preserves_future_extreme_returns (test_data_contract.DataTimingTests.test_eligibility_preserves_future_extreme_returns) ... ok
+test_exact_quarter_lag (test_data_contract.DataTimingTests.test_exact_quarter_lag) ... ok
+test_future_dividend_flags_disabled (test_data_contract.DataTimingTests.test_future_dividend_flags_disabled) ... ok
+test_industry_aggregation_cannot_use_future_month (test_data_contract.DataTimingTests.test_industry_aggregation_cannot_use_future_month) ... ok
+test_label_does_not_jump_missing_month (test_data_contract.DataTimingTests.test_label_does_not_jump_missing_month) ... ok
+test_market_cap_requires_raw_column (test_data_contract.DataTimingTests.test_market_cap_requires_raw_column) ... ok
+test_missing_optional_denominator (test_data_contract.DataTimingTests.test_missing_optional_denominator) ... ok
+test_missing_value_does_not_dilute_market_ratio (test_data_contract.DataTimingTests.test_missing_value_does_not_dilute_market_ratio) ... ok
+test_original_directory_cannot_be_output (test_data_contract.DataTimingTests.test_original_directory_cannot_be_output) ... ok
+test_ttm_missing_history_not_replaced_with_ytd (test_data_contract.DataTimingTests.test_ttm_missing_history_not_replaced_with_ytd) ... ok
+test_ttm_waits_for_all_input_publications (test_data_contract.DataTimingTests.test_ttm_waits_for_all_input_publications) ... ok
+test_vintage_guard (test_data_contract.DataTimingTests.test_vintage_guard) ... ok
+test_winsor_training_threshold_immune_to_test_change (test_data_contract.DataTimingTests.test_winsor_training_threshold_immune_to_test_change) ... ok
+test_constant_predictions_cannot_form_deciles (test_model_evaluation.EvaluationTests.test_constant_predictions_cannot_form_deciles) ... ok
+test_duplicate_join_rejected (test_model_evaluation.EvaluationTests.test_duplicate_join_rejected) ... ok
+test_huber_glm_matches_weighted_least_squares_for_one_group (test_model_evaluation.EvaluationTests.test_huber_glm_matches_weighted_least_squares_for_one_group) ... ok
+test_industry_vocabulary_only_uses_training (test_model_evaluation.EvaluationTests.test_industry_vocabulary_only_uses_training) ... ok
+test_initial_drawdown_and_geometric_return (test_model_evaluation.EvaluationTests.test_initial_drawdown_and_geometric_return) ... ok
+test_metric_benchmarks_are_distinct (test_model_evaluation.EvaluationTests.test_metric_benchmarks_are_distinct) ... ok
+test_nn_reproducible_and_records_training (test_model_evaluation.EvaluationTests.test_nn_reproducible_and_records_training) ... ok
+test_rank_deficient_pcr (test_model_evaluation.EvaluationTests.test_rank_deficient_pcr) ... ok
+test_rank_equation_and_future_missingness (test_model_evaluation.EvaluationTests.test_rank_equation_and_future_missingness) ... ok
+test_target_month_boundary (test_model_evaluation.EvaluationTests.test_target_month_boundary) ... ok
+test_tree_parameters_and_seed_reproducibility (test_model_evaluation.EvaluationTests.test_tree_parameters_and_seed_reproducibility) ... ok
+test_all_response_shocks_disjoint_across_splits (test_model_horizon.HorizonTests.test_all_response_shocks_disjoint_across_splits) ... ok
+test_monthly_split_unchanged (test_model_horizon.HorizonTests.test_monthly_split_unchanged) ... ok
+test_summed_response_uses_correct_horizon (test_model_horizon.HorizonTests.test_summed_response_uses_correct_horizon) ... ok
+test_effective_correlation_months_are_explicit (test_model_summary.SummaryTests.test_effective_correlation_months_are_explicit) ... ok
+test_identical_decimal_forecast_has_undefined_correlation (test_model_summary.SummaryTests.test_identical_decimal_forecast_has_undefined_correlation) ... ok
+test_pooled_is_ratio_of_sums_not_mean_of_ratios (test_model_summary.SummaryTests.test_pooled_is_ratio_of_sums_not_mean_of_ratios) ... ok
+test_strict_join_rejects_wrong_y_or_dropped_key (test_model_summary.SummaryTests.test_strict_join_rejects_wrong_y_or_dropped_key) ... ok
+test_a3_resume_checks_signature_and_duplicate_keys (test_simulation_records.SimulationRecordTests.test_a3_resume_checks_signature_and_duplicate_keys) ... ok
+test_existing_a3_and_a4_records_require_explicit_new_run (test_simulation_records.SimulationRecordTests.test_existing_a3_and_a4_records_require_explicit_new_run) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.177s
+
+OK

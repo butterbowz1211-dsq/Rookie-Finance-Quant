@@ -1,0 +1,11 @@
+{
+  "author": "Gilmour Jia",
+  "change": "Module documentation only; narrowed information-timing guarantee",
+  "executed_builder_snapshot": "results/repaired/executed_source/build_features.py",
+  "executed_sha256": "3d4c29ca90e729c6888f9b68e16d2ff35fb51b83180954c1ea3b6cd05310699b",
+  "current_builder": "research/ML金融学习计划/D_A股数据/build_features.py",
+  "current_sha256": "0102153bfe8457b7a37b95fb2ee313769a2d7605e65a802ac289d39a16580739",
+  "ast_without_module_docstring_identical": true,
+  "ast_sha256": "5e20d4bfeed24af2f1a63155d1bacfdcd528fad8f23b2b2af1b9e5a383de4172",
+  "scope": "Frozen build and entry-gate audit hashes refer to the preserved executed snapshot. No numerical model outputs were rerun or altered for this documentation change. The archival snapshot is for byte verification, not a separate executable entrypoint."
+}

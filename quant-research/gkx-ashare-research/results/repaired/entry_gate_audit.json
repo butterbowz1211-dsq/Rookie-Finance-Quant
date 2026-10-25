@@ -1,0 +1,381 @@
+{
+  "schema": "gkx-entry-gate-audit/1",
+  "author": "Gilmour Jia",
+  "generated_utc": "2026-10-25T09:48:48.784848+00:00",
+  "scope": "Frozen price19 build entry gate; read-only input inspection",
+  "parameters": {
+    "whole_file_minimum_daily_records": 60,
+    "minimum_observed_history_months": 24,
+    "minimum_days_in_feature_month": 10,
+    "file_limit": 0
+  },
+  "method": [
+    "Enumerate every prices/*.csv, matching the builder's unlimited sorted file list.",
+    "First require the filename stem to occur in raw returns_monthly.csv code values.",
+    "Count CSV data records, matching the builder's whole-file len(px) gate.",
+    "For files below the gate, group valid daily dates by calendar month; count observed history months cumulatively.",
+    "Count each stock-month with cumulative observed history >= min-months and current-month daily records >= min-days.",
+    "Publish only aggregate counts, short-file coverage metadata, and SHA-256 hashes; do not redistribute raw observations or local absolute paths."
+  ],
+  "summary": {
+    "price_files_total": 5237,
+    "raw_monthly_return_codes": 5236,
+    "price_files_matching_raw_returns": 5236,
+    "price_files_without_raw_returns": 1,
+    "files_excluded_by_daily_record_gate": 26,
+    "daily_records_range": [
+      2,
+      54
+    ],
+    "observed_months_range": [
+      1,
+      3
+    ],
+    "calendar_span_months_range": [
+      1,
+      3
+    ],
+    "first_month_range": [
+      "2025-10",
+      "2025-12"
+    ],
+    "last_month_range": [
+      "2025-12",
+      "2025-12"
+    ],
+    "eligible_stocks_excluded": 0,
+    "eligible_stock_months_excluded": 0
+  },
+  "unmatched_price_codes": [
+    "sz301687"
+  ],
+  "excluded_files": [
+    {
+      "code": "sh601026",
+      "source_file": "prices/sh601026.csv",
+      "sha256": "e68ee17bfa445493272064f78ce4d6c2b5631ba15866bc9b07565a7469073162",
+      "daily_records": 54,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh603092",
+      "source_file": "prices/sh603092.csv",
+      "sha256": "ad1b237f1b91d47c3b080ebd48008debcf8d14a5cb4b17eb5a6b38463f1c699c",
+      "daily_records": 39,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh603175",
+      "source_file": "prices/sh603175.csv",
+      "sha256": "c708efcecc38402b42515d30dd4aa190aa232be2b23865021b0ad5d0db7608e4",
+      "daily_records": 49,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh603248",
+      "source_file": "prices/sh603248.csv",
+      "sha256": "7ee2c2d02a0a28214dd981805090888ba895a509304a3b82a80990e023632903",
+      "daily_records": 7,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh603334",
+      "source_file": "prices/sh603334.csv",
+      "sha256": "aeb574c5599b859b0909e7f1dcf2986a5e1e76bfb0425ce82aa57dd3109d44f4",
+      "daily_records": 41,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh603376",
+      "source_file": "prices/sh603376.csv",
+      "sha256": "570c1bbf49aa913cf8314a26fc318adcdaced15727d1a42f35fedbef7e7ecef1",
+      "daily_records": 40,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688727",
+      "source_file": "prices/sh688727.csv",
+      "sha256": "08097b6657b8a4cfd0ca4f4e63186968d94230c9c7bb5938fbd3941f91667649",
+      "daily_records": 32,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688759",
+      "source_file": "prices/sh688759.csv",
+      "sha256": "8e26ddc2ded8754fe40b43ddfea3a68887020fdd40d17a5edecb0d28d15484d8",
+      "daily_records": 47,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688765",
+      "source_file": "prices/sh688765.csv",
+      "sha256": "1ffd930b81485c6e3aaaec82995a7df021b0b993375529977043cdf745844434",
+      "daily_records": 47,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688783",
+      "source_file": "prices/sh688783.csv",
+      "sha256": "c64b3dfaea05febdd88ef99921e950e47c1b7f71c70e886380fc9442f97125cc",
+      "daily_records": 47,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688790",
+      "source_file": "prices/sh688790.csv",
+      "sha256": "06f4d4f6833f4743f22b322d14691b8209aaac936ff171410c1ebdacb6e5e483",
+      "daily_records": 12,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688795",
+      "source_file": "prices/sh688795.csv",
+      "sha256": "b05de7d563fedd47e24e62bba60c693cb37ef50cc58796b8ee87f4cd8899274b",
+      "daily_records": 19,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688796",
+      "source_file": "prices/sh688796.csv",
+      "sha256": "d99de6134d0ff16153adea52d9f73cb6244856b32851e793c94db133e6855e84",
+      "daily_records": 16,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688802",
+      "source_file": "prices/sh688802.csv",
+      "sha256": "0c7781cc7a9e592a09c903d8fd33e54c9fd15fae1a1c190682db120e8c058d9f",
+      "daily_records": 11,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688805",
+      "source_file": "prices/sh688805.csv",
+      "sha256": "a65ea2fe6fa5b1a534c15e9fab43286f57d27721550252bb03776ef72ce03630",
+      "daily_records": 6,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688807",
+      "source_file": "prices/sh688807.csv",
+      "sha256": "1d11091258e9233be6ee18a7038176aef2f88d21a06268ad879179967815d848",
+      "daily_records": 9,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sh688809",
+      "source_file": "prices/sh688809.csv",
+      "sha256": "2e488d6f42669d73060959acb49118b93ca285161c757a579aaed8dfd81f4659",
+      "daily_records": 2,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001233",
+      "source_file": "prices/sz001233.csv",
+      "sha256": "5e60ea584038992a6864149ba64ef5f85937551fbdacdb3502c70472c84ffd65",
+      "daily_records": 27,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001280",
+      "source_file": "prices/sz001280.csv",
+      "sha256": "7383b57addd9bc38f972a665452610c0d12388fa3d4a7d89a691f13e04a70e22",
+      "daily_records": 21,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001325",
+      "source_file": "prices/sz001325.csv",
+      "sha256": "403cb3f308bc9c87a8f0fc694f379720fe06c33f0c88ec8e2613d56fac2fe4ad",
+      "daily_records": 10,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001369",
+      "source_file": "prices/sz001369.csv",
+      "sha256": "b411b99f975cefe06480556dbe9cd25d70a89aa0f4065f46a142bf7fc67a28bb",
+      "daily_records": 2,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001386",
+      "source_file": "prices/sz001386.csv",
+      "sha256": "ee2729d10ddec4d1c1aed7edfbc2562f0ad82a902ceb03959d1d242e936d38a3",
+      "daily_records": 51,
+      "observed_months": 3,
+      "calendar_span_months": 3,
+      "first_month": "2025-10",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz001396",
+      "source_file": "prices/sz001396.csv",
+      "sha256": "72c34a4279ad39a6c4f87c297a858071a5d11fab72b7a62755941162deacdd6d",
+      "daily_records": 2,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz301449",
+      "source_file": "prices/sz301449.csv",
+      "sha256": "99ac6ae0758ecda8b339c67053c4eb6ecb1cca86d1fefe64397dbe0d3bcef387",
+      "daily_records": 7,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz301638",
+      "source_file": "prices/sz301638.csv",
+      "sha256": "d1972e77ba661029b9eeda36e88e0760a0137128c37efca85ba84e329e933565",
+      "daily_records": 32,
+      "observed_months": 2,
+      "calendar_span_months": 2,
+      "first_month": "2025-11",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    },
+    {
+      "code": "sz301667",
+      "source_file": "prices/sz301667.csv",
+      "sha256": "00c68c81ff767db83b6f6ffc81f307df3cd78f790a56862a422f4833e7a40c40",
+      "daily_records": 7,
+      "observed_months": 1,
+      "calendar_span_months": 1,
+      "first_month": "2025-12",
+      "last_month": "2025-12",
+      "eligible_stock_months": 0,
+      "eligible_months": []
+    }
+  ],
+  "source_binding": {
+    "builder_file": "research/ML金融学习计划/D_A股数据/build_features.py",
+    "builder_sha256": "3d4c29ca90e729c6888f9b68e16d2ff35fb51b83180954c1ea3b6cd05310699b",
+    "audit_script_file": "scripts/audit_entry_gate.py",
+    "audit_script_sha256": "b8d6655037391615def4de725769189f74dda5e6bd10ce5c87c3cb35fb5dbb25",
+    "raw_returns_file": "returns_monthly.csv",
+    "raw_returns_sha256": "5ab7de8af482336aa0887af2c63d9647398f2bac6b7e18a791c7a3231c5f5ba9"
+  },
+  "interpretation": {
+    "direct_eligibility_effect": "The excluded files do not directly remove any eligible stock-month when eligible_stock_months_excluded is zero.",
+    "numerical_invariance_not_established": "Feature winsorization precedes eligibility filtering. Removing the gate may change the cross-sectional winsorization bounds for months covered by excluded files, even when none is eligible.",
+    "release_action": "Preserve the frozen builder and its recorded results; remove the residual whole-file gate in a future rebuild and evaluate the resulting panel and predictions.",
+    "boundary": "This audit concerns this entry gate only; it does not establish point-in-time correctness or complete universe coverage."
+  },
+  "reproduction_command": "python scripts/audit_entry_gate.py --raw-dir <LOCAL_RAW_DATA_DIR> --min-months 24 --min-days 10 --minimum-file-rows 60"
+}

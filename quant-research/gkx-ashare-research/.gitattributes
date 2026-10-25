@@ -1,0 +1,2 @@
+# Run manifests bind source bytes; do not silently normalize line endings.
+* -text

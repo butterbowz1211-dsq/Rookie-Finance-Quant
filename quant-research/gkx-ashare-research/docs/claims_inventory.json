@@ -1,0 +1,159 @@
+{
+  "schema": "gkx-claims-inventory/1.0",
+  "author": "Gilmour Jia",
+  "audit_date": "2026-10-25",
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "Historical NN3 pooled zero-benchmark test R2 is 1.0177149183600132 percent",
+      "status": "artifact_verified_not_revalidated",
+      "source": "results/historical/ashare/ashare_v2_nn71.csv",
+      "fields": {
+        "n_feat": 152,
+        "OOS": 1.0177149183600132,
+        "valid": 1.3848198837357661,
+        "OOS_dm": 0.413772446082028
+      },
+      "family": "NN",
+      "variant": "NN3 (32-16-8)",
+      "caveat": "Historical total-return target; global winsorization/calendar-label and feature-timing concerns; not a repaired-code result"
+    },
+    {
+      "id": "C02",
+      "claim": "Historical v3 Lasso test R2 is 1.0517 percent",
+      "status": "artifact_verified_not_revalidated",
+      "source": "results/historical/ashare/ashare_v3_fund56.csv",
+      "fields": {
+        "n_feat": 156,
+        "OOS": 1.0517,
+        "valid": 1.0331,
+        "param": 0.0005,
+        "nz": 49
+      },
+      "family": "regularized linear supplemental comparator",
+      "variant": "Lasso",
+      "caveat": "Different input generation and model from C01; cannot certify C01 or exclude shared bias"
+    },
+    {
+      "id": "C03",
+      "claim": "Historical Ridge decile spread Sharpe is approximately 2.41",
+      "status": "log_report_only_not_frozen_artifact",
+      "source": "prior exported research conversation; not redistributed",
+      "family": "regularized linear supplemental comparator",
+      "variant": "Ridge",
+      "caveat": "No complete frozen predictions/holdings/return ledger supplied in this release; old winsorized outcomes, gross equal-weight long-short, not NN3 and not net tradable performance"
+    },
+    {
+      "id": "C04",
+      "claim": "Historical RF OOS increases from 0.2963593 to 0.5859499 percent between 19- and 28-characteristic experiments",
+      "status": "artifact_verified_descriptive_only",
+      "sources": [
+        "results/historical/ashare/ashare_trees.csv",
+        "results/historical/ashare/ashare_fund.csv"
+      ],
+      "family": "RF",
+      "variant": "RandomForestRegressor grid",
+      "caveat": "Not causal attribution to financial features; historical pipeline not revalidated"
+    },
+    {
+      "id": "C05",
+      "claim": "Historical GBRT OOS is negative in the 19-, 28- and 71-characteristic examples",
+      "status": "artifact_verified_descriptive_only",
+      "sources": [
+        "results/historical/ashare/ashare_trees.csv",
+        "results/historical/ashare/ashare_fund.csv",
+        "results/historical/ashare/ashare_v2_tree71.csv"
+      ],
+      "family": "GBRT",
+      "variant": "GradientBoostingRegressor squared-error historical configurations",
+      "caveat": "Does not establish failure of all regression-tree methods in China"
+    },
+    {
+      "id": "C06",
+      "claim": "Four Monte Carlo cells have canonical aggregate linear, tree and NN output files",
+      "status": "artifact_presence_verified",
+      "source": "results/historical/monte_carlo/",
+      "caveat": "Reported n for canonical tree/NN outputs is 100; GLM and horizon tests have different repetition counts; exact full rerun not performed"
+    },
+    {
+      "id": "C07",
+      "claim": "Stock-level panel has 628113 rows, 5080 stocks and 191 feature months",
+      "status": "keys_recounted",
+      "source_logical_file": "D_A股数据/data/features_monthly.csv",
+      "period": [
+        "2010-01",
+        "2025-11"
+      ],
+      "caveat": "Old derived panel; source data not redistributed; feature months differ from target months"
+    },
+    {
+      "id": "C08",
+      "claim": "GKX RF3.35%, GBRT3.35%, OLS1.14% are simulation numbers",
+      "status": "primary_source_verified_correction",
+      "source": "https://dachxiu.chicagobooth.edu/download/ML_supp.pdf",
+      "anchor": "Internet Appendix p.2 Table A.1, model (a), Pc=50",
+      "caveat": "Old A-share narrative misused these as US empirical comparators"
+    },
+    {
+      "id": "C09",
+      "claim": "Test-mean-centered R2 is not a ranking metric or an implementable historical-mean benchmark",
+      "status": "definition_verified_correction",
+      "source_code": "D_A股数据/run_ashare2.py:r2_demeaned",
+      "caveat": "Use separate monthly IC/Rank IC and train-information-only benchmark forecasts"
+    },
+    {
+      "id": "C10",
+      "claim": "Six headline ML families are PLS, PCR, Elastic Net, RF, GBRT and NN",
+      "status": "taxonomy",
+      "variants": {
+        "PLS": [
+          "PLSRegression"
+        ],
+        "PCR": [
+          "PCA + linear regression"
+        ],
+        "Elastic Net": [
+          "Elastic Net; Ridge/Lasso are supplemental regularized-linear comparators"
+        ],
+        "RF": [
+          "RandomForestRegressor"
+        ],
+        "GBRT": [
+          "GradientBoostingRegressor; robust-loss variants in simulations"
+        ],
+        "NN": [
+          "NN1",
+          "NN2",
+          "NN3",
+          "NN4",
+          "NN5"
+        ]
+      },
+      "additional_baselines": [
+        "OLS",
+        "OLS3",
+        "Oracle in simulations",
+        "GLM/group lasso in simulations"
+      ],
+      "caveat": "Family count differs from estimator variant count; A-share historical outputs do not imply every NN architecture was run"
+    },
+    {
+      "id": "C11",
+      "claim": "Underlying prices, corporate actions, financials and industry/status histories come from public-facing third-party sources",
+      "status": "source_code_and_docs_verified_rights_unconfirmed",
+      "sources": [
+        "Sina Finance",
+        "East Money",
+        "CNINFO"
+      ],
+      "caveat": "No assertion of redistribution permission, complete point-in-time vintage or stable API service"
+    },
+    {
+      "id": "C12",
+      "claim": "Author of the research text and code is Gilmour Jia",
+      "status": "explicit_author_instruction",
+      "ai_assistance": "Codex and DeepSeek assistance disclosed without AI authorship; no external DeepSeek call made in this evidence inventory",
+      "caveat": "Do not erase attribution required by any incorporated third-party code or research sources"
+    }
+  ]
+}

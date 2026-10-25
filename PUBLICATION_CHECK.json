@@ -1,0 +1,16 @@
+{
+  "author": "Gilmour Jia",
+  "gkx_files_copied": 145,
+  "f17_files_byte_verified": 949,
+  "files_in_manifest": 1100,
+  "total_bytes_in_manifest": 151382485,
+  "findings": [],
+  "scope": "Text-file common-token/private-home scan, maximum blob size, copy hashes and F17 migration hashes. Not a universal secret detector or an empirical-validity certification.",
+  "manifest_exclusions": [
+    "PUBLICATION_MANIFEST.csv",
+    "PUBLICATION_CHECK.json",
+    ".git",
+    "Python caches"
+  ],
+  "f17_scope": "Previously public snapshot preserved without new scientific validation; binary privacy treatment is documented by its prior PRIVACY.md."
+}

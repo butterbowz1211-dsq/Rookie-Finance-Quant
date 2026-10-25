@@ -1,0 +1,1044 @@
+{
+  "schema": "gkx-historical-evidence/1.0",
+  "author": "Gilmour Jia",
+  "audit_date": "2026-10-25",
+  "scope": "file-copy and aggregate-result verification; no full model retraining",
+  "warning": "Historical results may be affected by known data and evaluation bugs. Source code at audit time is not proven identical to code used for each historical run.",
+  "files": [
+    {
+      "path": "results/historical/ashare/ashare_fund.csv",
+      "source_relative_path": "D_A股数据/out/ashare_fund.csv",
+      "bytes": 1154,
+      "sha256": "116e1d259dd961533c8c4069127bd226a1d8dcba94714b88754e41a3a7eb6a56",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "sd_pred",
+        "lam",
+        "alpha",
+        "nz",
+        "k",
+        "grid"
+      ],
+      "rows": 8,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_fundsmoke.csv",
+      "source_relative_path": "D_A股数据/out/ashare_fundsmoke.csv",
+      "bytes": 322,
+      "sha256": "71732f9d97c14ea4cb7213b636a31626eaf7f5d34b5f91fa11f7d9a0c1f96525",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "sd_pred",
+        "alpha",
+        "nz"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_ind28.csv",
+      "source_relative_path": "D_A股数据/out/ashare_ind28.csv",
+      "bytes": 876,
+      "sha256": "6a9f32a718334a9ab80f8dc32e4f746fa95c4479ad33f93efbb68a282ec026a6",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "sd_pred",
+        "lam",
+        "alpha",
+        "nz",
+        "k"
+      ],
+      "rows": 6,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_linear.csv",
+      "source_relative_path": "D_A股数据/out/ashare_linear.csv",
+      "bytes": 876,
+      "sha256": "6461fc9cb18c5816434eed40ec0e1e757b8c28010f5d975dad07238c87d08092",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "sd_pred",
+        "lam",
+        "alpha",
+        "nz",
+        "k"
+      ],
+      "rows": 6,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_trees.csv",
+      "source_relative_path": "D_A股数据/out/ashare_trees.csv",
+      "bytes": 303,
+      "sha256": "f46534eef2587e7e573a2e8c3214da87831622a48b93d94da6ee93f47c73098f",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "sd_pred",
+        "grid"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_lin71.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_lin71.csv",
+      "bytes": 740,
+      "sha256": "1bc353794dcaa1fcec98a4dc0627fbaa4f9b55de1f7f18180d92496641cb40f7",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "param",
+        "nz"
+      ],
+      "rows": 6,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_lin71b.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_lin71b.csv",
+      "bytes": 270,
+      "sha256": "fe6e8037075dc83c36811aa1906e44b06da7c6755d0ebbf9001816e963c949c4",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "param"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_lin71c.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_lin71c.csv",
+      "bytes": 314,
+      "sha256": "56da5bb88a921b4f08c50cf01150a83e62212babdba3be83662efe53b53cb0ce",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "OOS_m",
+        "param"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_lin71e.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_lin71e.csv",
+      "bytes": 306,
+      "sha256": "df56a64d1fc048c9336696b293a69fd139b5dc28d2107cdcddc0d242ab8f6c46",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "OOS_m",
+        "param"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_nn71.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_nn71.csv",
+      "bytes": 169,
+      "sha256": "9fbee2aeb33a52d6189124b269b96e78fc92f2a788a8b1b2fbc54cd7dfb13af6",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "param"
+      ],
+      "rows": 1,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_repro_check.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_repro_check.csv",
+      "bytes": 188,
+      "sha256": "44a7c8dc3572f93437afc16070e2d8ff8605a964e8b5cccea3b385b763fcbb88",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "OOS_m",
+        "param"
+      ],
+      "rows": 1,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_rf71_leaf100.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_rf71_leaf100.csv",
+      "bytes": 186,
+      "sha256": "b6b0ac3d7f22555914c9af2a03c5418ac66633acddfa44a34872e2513250362e",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "OOS_m",
+        "param"
+      ],
+      "rows": 1,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v2_tree71.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v2_tree71.csv",
+      "bytes": 270,
+      "sha256": "07be1df8a1e2201c73559fcd3bda06a85d71e20daadf3d8f252c1f6639818572",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "valid",
+        "param"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/ashare/ashare_v3_fund56.csv",
+      "source_relative_path": "D_A股数据/out/ashare_v3_fund56.csv",
+      "bytes": 381,
+      "sha256": "2f9426ae27060517105b37ce88eb5007d1429e6b54598cdc69464c975e4b678f",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "n_feat",
+        "IS",
+        "valid",
+        "OOS",
+        "IS_dm",
+        "OOS_dm",
+        "param",
+        "nz"
+      ],
+      "rows": 6,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_NN_pc100_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_NN_pc100_a.csv",
+      "bytes": 224,
+      "sha256": "d258aac3efe79c988209a2c6c131ecdd1a4c1a17b87fe809ace7dd8971f017a7",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 5,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "NN1": "100",
+        "NN2": "100",
+        "NN3": "100",
+        "NN4": "100",
+        "NN5": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_NN_pc100_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_NN_pc100_b.csv",
+      "bytes": 224,
+      "sha256": "0692766a811108bfb6f078cd74bd2f42e76bdebac3db27107dce76b90a2a5706",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 5,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "NN1": "100",
+        "NN2": "100",
+        "NN3": "100",
+        "NN4": "100",
+        "NN5": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_NN_pc50_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_NN_pc50_a.csv",
+      "bytes": 224,
+      "sha256": "00fba7f03c122d059d5c87ba48f8368bfdd225e42c5174e3bc582216001a6107",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 5,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "NN1": "100",
+        "NN2": "100",
+        "NN3": "100",
+        "NN4": "100",
+        "NN5": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_NN_pc50_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_NN_pc50_b.csv",
+      "bytes": 224,
+      "sha256": "986b147017eb20e3289d5dc853f65cd8fda6c20c8ae0f7ce2d2d21353e768f53",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 5,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "NN1": "100",
+        "NN2": "100",
+        "NN3": "100",
+        "NN4": "100",
+        "NN5": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_pc100_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_pc100_a.csv",
+      "bytes": 423,
+      "sha256": "ed17603fbc542679b4ba3a3027ab75ba335770731c509ddedcfcf37dc1e6f4ed",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_pc100_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_pc100_b.csv",
+      "bytes": 427,
+      "sha256": "69fbde6d242aad803b331da4fbcfe92769cd53bbe4268a7da434d9dfe943b2fd",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_pc50_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_pc50_a.csv",
+      "bytes": 421,
+      "sha256": "24244156ae0b92e93559fcaf14467b2af68c5d61d65dcdc2686f1e5de1418e52",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_pc50_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_pc50_b.csv",
+      "bytes": 425,
+      "sha256": "1110057dac1ec77fecdd06fc280d851560b2fbde0b3f124634d40f337f799d08",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_TREE_pc100_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_TREE_pc100_a.csv",
+      "bytes": 154,
+      "sha256": "41a5bed20d40efeb4d67d1cd96aef9c680b6af2ff36593636a83b9044c055881",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 3,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "RF": "100",
+        "GBRT": "100",
+        "GBRT+H": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_TREE_pc100_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_TREE_pc100_b.csv",
+      "bytes": 154,
+      "sha256": "666ad284a5ae4f701715546fb031c4c260ce9a9126aff2190c6b8514475af7c1",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 3,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "RF": "100",
+        "GBRT": "100",
+        "GBRT+H": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_TREE_pc50_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_TREE_pc50_a.csv",
+      "bytes": 127,
+      "sha256": "43350d6db5e8a387ad1a43435977b09e2624c08aea7ee90ab2e91ecd50068afb",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 3,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "RF": "100",
+        "GBRT": "100",
+        "GBRT+H": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_A1_TREE_pc50_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_A1_TREE_pc50_b.csv",
+      "bytes": 154,
+      "sha256": "37389e4318dcb0fda92bfefc679f4a888fc067b903e4f213e4906120546f0828",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd",
+        "n"
+      ],
+      "rows": 3,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units",
+      "reported_repetitions": {
+        "RF": "100",
+        "GBRT": "100",
+        "GBRT+H": "100"
+      }
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_GLM_pc100_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_GLM_pc100_a.csv",
+      "bytes": 105,
+      "sha256": "f6a0073016f23a82ce4b63d2ad3587fd767480d720604c474cfdebbbeef5b241",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_GLM_pc100_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_GLM_pc100_b.csv",
+      "bytes": 105,
+      "sha256": "ab40f8cb742d4fdcc72c7a9e69ddd8cb0f6e9ff1a2bf6b7edb3796cabeed02f2",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_GLM_pc50_a.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_GLM_pc50_a.csv",
+      "bytes": 105,
+      "sha256": "1b6e11d7d32bbdb23af31e4e639149d883c2437257ff879ae501fa18f4ad8839",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_GLM_pc50_a_i400.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_GLM_pc50_a_i400.csv",
+      "bytes": 105,
+      "sha256": "1b6e11d7d32bbdb23af31e4e639149d883c2437257ff879ae501fa18f4ad8839",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_GLM_pc50_b.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_GLM_pc50_b.csv",
+      "bytes": 105,
+      "sha256": "2c318cfb96d7f13b4e804476b106ac2a20a3e2cc6e0ad16cc96d9abf5bcf00ba",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 2,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_h12_all.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_h12_all.csv",
+      "bytes": 449,
+      "sha256": "9a6065f752e6ad858b40a986e1f9efa027c9316d27a3ea0af68a4d5a4aa8a9bf",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_h12_tree.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_h12_tree.csv",
+      "bytes": 148,
+      "sha256": "3d804fc64a7c4730f34296df90023f8554521dec962e4b2fb62109e215177e2d",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 3,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_h3_all.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_h3_all.csv",
+      "bytes": 438,
+      "sha256": "eb12056f837fc353479577cdb7cf21739bda87d7b5216f043b8c1088b53ea6d9",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA1_h6_all.csv",
+      "source_relative_path": "A_蒙特卡洛/out/tableA1_h6_all.csv",
+      "bytes": 445,
+      "sha256": "d377a95157f0a0767d6c32c2daf338f2a75885b5fb7ae31d5d4ed253be91b635",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "columns": [
+        "model",
+        "is_mean",
+        "is_sd",
+        "oos_mean",
+        "oos_sd"
+      ],
+      "rows": 11,
+      "units": "R2-related numeric columns are percentage points (1.02 means 1.02%); model parameters retain native units"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA3_pc100_a.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA3_pc100_a.json",
+      "bytes": 983,
+      "sha256": "20dfe3d7f445d017b66e1271e851cd8eb7436511f08dd6639c2689a033f0332b",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "selection frequencies in [0,1]; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: mean over other variables"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA3_pc100_b.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA3_pc100_b.json",
+      "bytes": 563,
+      "sha256": "80c6e3fc6e6bea6b3615e50fcf758c278a77a325b1bb6231653c43afc4e669e9",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "selection frequencies in [0,1]; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: mean over other variables"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA3_pc50_a.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA3_pc50_a.json",
+      "bytes": 977,
+      "sha256": "03c3bdc3c2e77a89e037e1f931b3fc4bb7f31d21694de4499e6198d6059eb264",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "selection frequencies in [0,1]; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: mean over other variables"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA3_pc50_b.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA3_pc50_b.json",
+      "bytes": 563,
+      "sha256": "45d0079ac30ab2fd5d7c1eaf40c0c1c4ffa25346ea3045a9767c3999c44c991e",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "selection frequencies in [0,1]; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: mean over other variables"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc100_a_nn.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc100_a_nn.json",
+      "bytes": 949,
+      "sha256": "464b4307a8f88beae9f8c4582fd093c03333910748b79222e124fa100c420958",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc100_a_tree.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc100_a_tree.json",
+      "bytes": 551,
+      "sha256": "4db4d4951f911dfb142a7ad28b4f10d7b8bdc2b1b63d9e7576fee74975577d83",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc100_b_nn.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc100_b_nn.json",
+      "bytes": 884,
+      "sha256": "b82796334b5807949dbc5c16008ef2613fdbd065705cdefb46a5cf9c22af8656",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc100_b_tree.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc100_b_tree.json",
+      "bytes": 572,
+      "sha256": "803470a9483f475a4471dbeec9998d156483f819d5e6898b2162787d2e66f86d",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc50_a_nn.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc50_a_nn.json",
+      "bytes": 939,
+      "sha256": "25a84d45d6e2a6be4ce6a5ceaea6b54805593e0fbb281d63e68241b0fa41fc29",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc50_a_tree.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc50_a_tree.json",
+      "bytes": 577,
+      "sha256": "81e3a70ebbd4d62930bd3c30da1a9f75590f39ee958de549ceee737fb2b21b35",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc50_b_nn.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc50_b_nn.json",
+      "bytes": 933,
+      "sha256": "97d440b223913933f766cc9aabd48023b0d8b7ecb8f4f5e00d39566297532aaa",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    },
+    {
+      "path": "results/historical/monte_carlo/tableA4_pc50_b_tree.json",
+      "source_relative_path": "A_蒙特卡洛/out/tableA4_pc50_b_tree.json",
+      "bytes": 552,
+      "sha256": "71b8b01df2535708fd4fb7c922996239b8e5248bfa25366f9de365d211f890f5",
+      "status": "historical_not_rerun_after_repairs",
+      "source_run_code_commit": null,
+      "source_run_environment": null,
+      "units": "normalized importance on percentage scale; six: c1,c2,c3,c1*x,c2*x,c3*x; noise: per-noise-variable mean"
+    }
+  ],
+  "source_code_snapshot_hashes": [
+    {
+      "source_relative_path": "A_蒙特卡洛/calib_cs.py",
+      "sha256": "491da1b21a3126e1ebe9cf4ddc694888ec0795069a371e2c62673282ea075118",
+      "bytes": 4526,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/combine_a1.py",
+      "sha256": "fdc9229140088fb333edecf9e3a961e3f56270dd1cf8b70bce60aae635587f3f",
+      "bytes": 3163,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/compare_A1.py",
+      "sha256": "90a7ca55f8519cfa60125d63e28f85051854ed1380a3ef066cb15a7c6d0cf116",
+      "bytes": 3011,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/dgp.py",
+      "sha256": "ccf937926a796e4e7ee12aa64f884fa98a0f552e36d3b822582cccaa62a898fb",
+      "bytes": 6019,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/launch_shards.py",
+      "sha256": "2e80f954fa36ebb1f9e7bf711a0a055da410316aa87d892a097fbf1484f093a1",
+      "bytes": 3558,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/merge_raw.py",
+      "sha256": "ed1b26b1d07bd0968be3523286740234c9282dff3a111fb43a43fcfca7c486bf",
+      "bytes": 2551,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/models.py",
+      "sha256": "7b04e83a557591f7aba7470356a8dcc7d1b809c0f043c9dcbd4f5bd65b122b82",
+      "bytes": 12789,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/nn.py",
+      "sha256": "05dc7a28b1f8736d39495b7d14fe6df005037cf5becf6c09965d4ad11a484c1d",
+      "bytes": 7686,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/run_mc.py",
+      "sha256": "5e5a9d65e9f1da3b2f177144c0ae7566400ff20cb06bd6630d0029759fe1afca",
+      "bytes": 11626,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/table_a3.py",
+      "sha256": "e2675e0eb12be1583b20d8c08c98205f2ce46b6d7213f4e33296a80397681284",
+      "bytes": 4868,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "A_蒙特卡洛/table_a4.py",
+      "sha256": "e1b8dc4abc84a31712d69b0839a5994e097ad18bbfb094b64c560f634d44392a",
+      "bytes": 6334,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/build_features.py",
+      "sha256": "b1a7141674a4e9d3e44f83b186a686f8025f2b1975a379019f47ed652262fe8f",
+      "bytes": 13054,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/build_fundamentals.py",
+      "sha256": "48228c74207725a0dfd567684eb1439ba6e10fb9fe54f041bdbf29fa8bd7928f",
+      "bytes": 9746,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/build_fundamentals_v2.py",
+      "sha256": "6dfe39ecca0c8a1e39667d5c90cd2e2ef0a332aa96861dd4b2bc1b0acb868673",
+      "bytes": 23792,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/build_macro.py",
+      "sha256": "e411c38fc01c164d83b79138cd6b50d8b165f46ec19dfef7ff07f969108329ca",
+      "bytes": 3933,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/build_returns.py",
+      "sha256": "73e53e7efb90ac914952bd8b7f749ad68562d7de6b4ae890f2141fafee42ab6b",
+      "bytes": 4498,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_dividends.py",
+      "sha256": "3b7eebf86e01eed6ccdf27baf78eab41b194c583b16be5cf1068342f2cebd41a",
+      "bytes": 4962,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_financials.py",
+      "sha256": "e89c912c725ae80624f434eaaef8e5452845265a6cf0a58dcf853ae33c0e986f",
+      "bytes": 5224,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_industries.py",
+      "sha256": "19497d1e5583ff3e23b1c7661a96ca5515d51bfd36a4e9c64b6ccb09a5eb048d",
+      "bytes": 3721,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_prices.py",
+      "sha256": "383c922ce28d54a5c6b05cbdd4502bb3a90546694746466cb2c850dbaab3bdfb",
+      "bytes": 5827,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_shares.py",
+      "sha256": "4d422976bc2969f7a4ea417234830226641809a4babb3917e72b197b99988a58",
+      "bytes": 3711,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_statements.py",
+      "sha256": "1be279e9241b1161de60e7fe300e67588dc9b3e62fd98f8e0954b01b8a9138c9",
+      "bytes": 5908,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/fetch_statements_full.py",
+      "sha256": "ac049c54977a76a4813c09a1d2facb5c5f01e73f88e625c62be84963d95fb4e6",
+      "bytes": 8283,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/portfolio_check.py",
+      "sha256": "147858f73c4c0179a1a6e3d97cefff9396b6861898da01b67ff64f2b48834423",
+      "bytes": 5957,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/run_ashare.py",
+      "sha256": "d1fdcc464edb1c531bf90d431deb9872143930c3072556f48c137c2d680052fc",
+      "bytes": 14438,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/run_ashare2.py",
+      "sha256": "b41ac97e095bbd6304d6f154d2f0cbaa52c0813267486c22af510c4a843230e0",
+      "bytes": 12588,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/run_ashare3.py",
+      "sha256": "28c7bb58e8d12fa87d54f00e596c19c7825be0cde0fe4334a060cb4b5623b4dd",
+      "bytes": 6468,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    },
+    {
+      "source_relative_path": "D_A股数据/screen_returns.py",
+      "sha256": "80b91606fea39fdd4a88aa14168123caad57d371041d67106caff55829d3fe60",
+      "bytes": 5533,
+      "status": "source_snapshot_before_release_repairs_not_exact_historical_run_binding"
+    }
+  ],
+  "source_root_disclosure": "Only source-relative logical paths are included; private machine paths and conversation logs are omitted."
+}

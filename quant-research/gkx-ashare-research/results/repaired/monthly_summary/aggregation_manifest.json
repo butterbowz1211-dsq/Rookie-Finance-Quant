@@ -1,0 +1,57 @@
+{
+  "author": "Gilmour Jia",
+  "status": "recomputed_and_matched",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "stock_month_rows": 212293,
+  "months": 48,
+  "models": [
+    "ridge",
+    "enet",
+    "pls",
+    "rf",
+    "gbrt",
+    "ols",
+    "lasso",
+    "pcr",
+    "nn3"
+  ],
+  "key_join": "strict one-to-one outer join; identical realized returns and market caps",
+  "r2_tolerance_percent_points": 1e-10,
+  "inputs": [
+    {
+      "filename": "predictions_price19_repaired.csv",
+      "sha256": "f6610c0c4adc2a310e95cb887035d917ce1ddf1c975f5c7dc541452fab03f100",
+      "bytes": 35139363
+    },
+    {
+      "filename": "predictions_price19_repaired_extra.csv",
+      "sha256": "fafef2161cb979c39a6ad6cf4c65bdc8f647824d8312fc52c0f2624dc582c95b",
+      "bytes": 30490006
+    },
+    {
+      "filename": "ashare_price19_repaired.csv",
+      "sha256": "da84d8dd315843e82cc3655a7d3d9580fc0088a00cb1ae4a7a3a473ab543b541",
+      "bytes": 1067
+    },
+    {
+      "filename": "ashare_price19_repaired_extra.csv",
+      "sha256": "f2e1e8de1fb0231bb5ebbfd81805b4cd596570fc1511fb2b47d1241c07d19c32",
+      "bytes": 843
+    }
+  ],
+  "script_sha256": "d4936f53f51810f2e7e54a6442930b82d6bed0fc5c9adca0d37a24671b587ee7",
+  "privacy": "Only aggregate monthly and pooled metrics exported; no individual stock predictions",
+  "units": {
+    "r2_zero": "fraction",
+    "pooled_r2_zero_percent": "percent",
+    "ic": "correlation"
+  },
+  "limitations": [
+    "Same repeatedly examined historical test period; not independent external validation",
+    "No uncertainty interval or multiple-testing adjustment computed",
+    "Undefined correlations for constant forecasts are missing, not zero",
+    "Total-return targets and residual source-data limitations remain"
+  ]
+}

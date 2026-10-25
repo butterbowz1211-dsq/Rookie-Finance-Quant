@@ -1,0 +1,3 @@
+# Data-building environment observed on 2026-10-25, Python 3.12.14.
+numpy==2.3.5
+pandas==3.0.1

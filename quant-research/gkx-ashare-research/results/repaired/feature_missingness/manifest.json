@@ -1,0 +1,27 @@
+{
+  "author": "Gilmour Jia",
+  "input_filename": "features_monthly.csv",
+  "input_sha256": "0a993bef6247fff10db46ace0798bccd1898a55562a99a6e49d881eba8ec0e06",
+  "script_sha256": "e2e210fcc46ed748f196d29a5f1c678d9de0eeadd9ac6686dfd3986982bc528a",
+  "population": "Eligible rows with finite target returns, split by target month; exact final model population",
+  "stage": "Frozen builder output before cross-sectional ranks and train standardization",
+  "interpretation": "Nonfinite feature values become neutral rank zero before standardization; observed median ranks are not counted as imputation",
+  "ranking_note": "The actual rank reference population additionally includes eligible rows without a future observed label; this table describes only final fitting/scoring rows",
+  "windows": {
+    "train": [
+      "2010-01",
+      "2018-12"
+    ],
+    "valid": [
+      "2019-01",
+      "2021-12"
+    ],
+    "test": [
+      "2022-01",
+      "2025-12"
+    ]
+  },
+  "rows": 57,
+  "numpy": "2.3.5",
+  "pandas": "3.0.1"
+}

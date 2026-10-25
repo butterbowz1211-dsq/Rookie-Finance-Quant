@@ -1,0 +1,52 @@
+{
+  "author": "Gilmour Jia",
+  "model": "nn3",
+  "gross": true,
+  "risk_free_rate_assumed_for_ratio": 0,
+  "consecutive_target_months": true,
+  "statistics": {
+    "high": {
+      "months": 48,
+      "monthly_mean": 0.021401072869178292,
+      "monthly_sd": 0.06336985736870203,
+      "annualized_mean_over_sd_rf0": 1.1698857180703761,
+      "cagr": 0.2600387110461453,
+      "cumulative_return": 1.5207835208654084,
+      "max_drawdown": -0.22207175129424028
+    },
+    "low": {
+      "months": 48,
+      "monthly_mean": -0.0022712285806048443,
+      "monthly_sd": 0.07479453159642979,
+      "annualized_mean_over_sd_rf0": -0.1051917356321251,
+      "cagr": -0.05841671287651451,
+      "cumulative_return": -0.2139775232207657,
+      "max_drawdown": -0.5110396559050232
+    },
+    "spread": {
+      "months": 48,
+      "monthly_mean": 0.023672301449783134,
+      "monthly_sd": 0.04295167350444944,
+      "annualized_mean_over_sd_rf0": 1.9091981987087578,
+      "cagr": 0.30997697055359996,
+      "cumulative_return": 1.9447921262960448,
+      "max_drawdown": -0.1360637250394885
+    },
+    "market_ew": {
+      "months": 48,
+      "monthly_mean": 0.00988453628868143,
+      "monthly_sd": 0.06628111711536926,
+      "annualized_mean_over_sd_rf0": 0.5166032138973904,
+      "cagr": 0.09694148152580939,
+      "cumulative_return": 0.447884235768399,
+      "max_drawdown": -0.23346132392136654
+    }
+  },
+  "limitations": [
+    "No transaction costs, borrow constraints, execution delay or capacity model",
+    "High-minus-low spread compounding is a notional diagnostic, not a specified funded account",
+    "Low portfolio returns are not the realized P&L of an implementable short position",
+    "Mean-over-SD is not a risk-free-adjusted Sharpe ratio for long-only portfolios",
+    "Missing target returns and unavailable deciles can affect sample selection"
+  ]
+}

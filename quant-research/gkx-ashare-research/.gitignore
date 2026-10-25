@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+research/**/data/
+research/**/out/
+research/**/out_repaired/
+research/**/derived_repaired/
+predictions_*.csv
+*.pkl
+*.pt
+*.npz
+*.parquet
