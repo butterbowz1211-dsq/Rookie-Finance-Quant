@@ -2,14 +2,14 @@
 
 作者：**Gilmour Jia**
 
-金融与量化研究档案。每项研究独立披露方法、数据来源、实验版本、结果和适用边界。
+金融与量化学习研究档案。每项研究独立披露方法、数据来源、实验版本、结果和适用边界。
 
 ## 量化研究
 
 | 项目 | 内容 | 入口 |
 |---|---|---|
 | F17 因子研究 | 线性基线、正则化、权重重估与机器学习组合政策的既有研究档案 | [研究与历史结果](quant-research/f17-quant-research/README.md) |
-| GKX A 股研究 | GKX 框架的模拟复现、A 股多模型比较、数据与评估修订 | [完整研究说明](quant-research/gkx-ashare-research/README.md) |
+| GKX A 股研究 | Gu&Kelly&Xu 框架的模拟复现、A 股多模型比较、数据与评估修订 | [完整研究说明](quant-research/gkx-ashare-research/README.md) |
 
 F17 与 GKX A 股研究使用不同的数据管道、标签、样本和实验配置，结果不构成同口径模型排行榜。
 
